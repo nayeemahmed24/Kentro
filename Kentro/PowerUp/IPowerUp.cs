@@ -6,11 +6,9 @@ using System.Threading.Tasks;
 
 namespace Kentro
 {
-    class Program
+    public interface IPowerUp
     {
-        static void Main(string[] args)
-        {
-
-        }
+        int getProbability();
+        void Operation();
     }
 }
