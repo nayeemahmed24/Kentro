@@ -43,18 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-
+    <Compile Include="GameGrid\Card.cs" />
     <Compile Include="Players\Pawn.cs" />
     <Compile Include="Players\Player.cs" />
-
     <Compile Include="PowerUp\IPowerUp.cs" />
     <Compile Include="PowerUp\PBlock.cs" />
     <Compile Include="PowerUp\PChangeNumber.cs" />
     <Compile Include="PowerUp\PFreeze.cs" />
     <Compile Include="PowerUp\PNone.cs" />
+    <Compile Include="PowerUp\PowerUpFactory.cs" />
     <Compile Include="PowerUp\PShow.cs" />
     <Compile Include="PowerUp\PShuffle.cs" />
-
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PowerUp\PShuffleAll.cs" />
@@ -62,12 +61,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-
   <ItemGroup>
     <Folder Include="Interface\" />
   </ItemGroup>
-
-
-
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

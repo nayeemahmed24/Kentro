@@ -1,15 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Kentro
 {
     
      public class PShuffleAll:IPowerUp
     {
-        private int probability = 10;
+        private int probability = 7;
         public int getProbability()
         {
             return probability;

@@ -1,0 +1,9 @@
+﻿
+
+namespace Kentro
+{
+    class Card
+    {
+
+    }
+}
