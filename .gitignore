@@ -72,3 +72,9 @@ Kentro/.vs/Kentro/v16/.suo
 *.ide-shm
 *.cache
 *.ide-wal
+.vs/Kentro/v16/.suo
+*.json
+*.sqlite
+*.pdb
+*.config
+*.exe
