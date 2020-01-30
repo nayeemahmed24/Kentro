@@ -11,9 +11,11 @@ namespace Kentro
             return probability;
         }
 
-        public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid, params object[] arguments)
+
+        public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid,
+            params object[] arguments)
         {
-            throw new NotImplementedException();
+            grid[(Position)arguments[0]].value = (int)arguments[1];
         }
 
        

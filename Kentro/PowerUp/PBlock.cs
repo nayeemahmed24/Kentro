@@ -6,6 +6,7 @@ namespace Kentro
     public class PBlock:IPowerUp
     {
         private int probability = 5;
+
         public int getProbability()
         {
             return probability;
