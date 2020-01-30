@@ -10,7 +10,6 @@ namespace Kentro
     {
         NoPlayer,
         Player1,
-        Player2
-        
+        Player2       
     }
 }

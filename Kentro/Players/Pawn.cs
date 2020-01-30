@@ -4,7 +4,7 @@ namespace Kentro
 {
     public class Pawn
     {
-        public Position position;
+        public Position position { get; set; }
         public int Move { get; set; }
 
         public Pawn(int x,int y)
@@ -12,8 +12,6 @@ namespace Kentro
             position = new Position(x,y);
             Move = 1;
         }
-
-
 
     }
 }

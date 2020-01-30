@@ -9,7 +9,7 @@ namespace Kentro
         #region Variable
         public Dictionary<Position, Card> grid;
         public Position goal;
-        public Player player1, player2;
+        public Player player,player1, player2;
         public int GridSize;
         #endregion
 
@@ -36,7 +36,7 @@ namespace Kentro
             }
             else
             {
-                Card card = new Card(playerid);
+                Card card = new Card(player);
                 grid.Add(pos,card);
                 return card;
             }
