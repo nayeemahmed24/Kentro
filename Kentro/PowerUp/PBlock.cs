@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kentro
 {
@@ -10,9 +11,10 @@ namespace Kentro
             return probability;
         }
 
-        public void Operation()
+        public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid, params object[] arguments)
         {
             throw new NotImplementedException();
         }
+
     }
 }

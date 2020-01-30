@@ -4,18 +4,17 @@ using System;
 
 namespace Kentro
 {
-    class Card
+    public class Card
     {
         public int value;
         public bool flipped;
         public IPowerUp powerup;
-        /// <summary>
-        /// Use enum to specify whose pawn it is... 
-        /// </summary>
+        public PlayerEnum pawnOwner;
         private PowerUpFactory powerFactory;
 
-        public Card()
+        public Card(PlayerEnum playerid)
         {
+            pawnOwner = playerid;  
             value = new Random().Next(0,7);//
             flipped = true;
             powerFactory = new PowerUpFactory();
