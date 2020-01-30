@@ -10,6 +10,7 @@ namespace Kentro
         public Dictionary<Position, Card> grid;
         public Position goal;
         public Player player1, player2;
+        public int GridSize;
         #endregion
 
         #region Constructor
@@ -17,8 +18,8 @@ namespace Kentro
         public Grid(int gridSize)
         {
             grid = new Dictionary<Position, Card>();
-            goal.x = (gridSize - 1) / 2;
-            goal.y = (gridSize - 1) / 2;
+            GridSize = gridSize;
+            goal = new Position((gridSize - 1) / 2, (gridSize - 1) / 2);
             player1 = new Player(0, 0,PlayerEnum.Player1);
             player2 = new Player(gridSize - 1, gridSize - 1,PlayerEnum.Player2);
         }

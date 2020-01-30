@@ -9,7 +9,7 @@ namespace Kentro
 
         public int getProbability()
         {
-            throw new NotImplementedException();
+            return probability;
         }
 
         public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid, params object[] arguments)

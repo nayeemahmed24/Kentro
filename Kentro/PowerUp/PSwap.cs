@@ -4,7 +4,7 @@ using System.Collections.Generic;
 namespace Kentro
 {
 
-    public class PShuffle:IPowerUp
+    public class PSwap:IPowerUp
 
     {
         private int probability=6;
