@@ -14,10 +14,12 @@ namespace Kentro
 
         public Card(PlayerEnum playerid)
         {
+
+            value = new Random().Next(1,7);//
             pawnOwner = playerid;  
-            value = new Random().Next(0,7);//
             flipped = true;
             powerFactory = new PowerUpFactory();
+
             switch (powerFactory.ListPowerUps.Count)
             {
                 case 0:
@@ -29,6 +31,25 @@ namespace Kentro
                     break;
             }
 
+        }
+
+        public Card(PlayerEnum player, int value)
+        {
+            this.value = value;
+            pawnOwner = player;
+            flipped = true;
+            powerFactory = new PowerUpFactory();
+
+            switch (powerFactory.ListPowerUps.Count)
+            {
+                case 0:
+                    powerup = new PNone();
+                    break;
+                default:
+                    powerup = powerFactory.ListPowerUps.Peek();
+                    powerFactory.ListPowerUps.Pop();
+                    break;
+            }
         }
     }
 }

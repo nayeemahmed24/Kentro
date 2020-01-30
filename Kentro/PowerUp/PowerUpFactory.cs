@@ -43,7 +43,7 @@ namespace Kentro
             pFreeze = new PFreeze();
             pNone = new PNone();
             pShow = new PShow();
-            pShuffle = new PShuffle();
+            pShuffle = new PSwap();
             pShuffleAll = new PShuffleAll();
             dic.Add(pBlock, 2);
             dic.Add(pChangeNumber, 2);
