@@ -8,7 +8,7 @@ namespace Kentro
     {
         private Dictionary<IPowerUp,int> dic;
         private Dictionary<int, IPowerUp> track;
-        private IPowerUp pBlock,pChangeNumber,pFreeze,pNone,pShow,pShuffle,pShuffleAll;
+        private IPowerUp pBlock,pChangeNumber,pFreeze,pNone,pShow,pSwap,pShuffleAll;
         public Stack<IPowerUp> ListPowerUps;
         public PowerUpFactory()
         {
@@ -43,14 +43,14 @@ namespace Kentro
             pFreeze = new PFreeze();
             pNone = new PNone();
             pShow = new PShow();
-            pShuffle = new PSwap();
+            pSwap = new PSwap();
             pShuffleAll = new PShuffleAll();
             dic.Add(pBlock, 2);
             dic.Add(pChangeNumber, 2);
             dic.Add(pFreeze, 2);
             dic.Add(pNone, 2);
             dic.Add(pShow, 2);
-            dic.Add(pShuffle, 2);
+            dic.Add(pSwap, 2);
             dic.Add(pShuffleAll, 2);
 
             track.Add(pBlock.getProbability(), pBlock);
@@ -58,7 +58,7 @@ namespace Kentro
             track.Add(pFreeze.getProbability(), pFreeze);
             track.Add(pNone.getProbability(), pNone);
             track.Add(pShow.getProbability(), pShow);
-            track.Add(pShuffle.getProbability(), pShuffle);
+            track.Add(pSwap.getProbability(), pSwap);
             track.Add(pShuffleAll.getProbability(), pShuffleAll);
 
         }
