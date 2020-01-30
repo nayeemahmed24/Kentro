@@ -44,6 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GameGrid\Card.cs" />
+    <Compile Include="GameGrid\Grid.cs" />
+    <Compile Include="GameGrid\Position.cs" />
     <Compile Include="Players\Pawn.cs" />
     <Compile Include="Players\Player.cs" />
     <Compile Include="PowerUp\IPowerUp.cs" />
@@ -61,8 +63,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interface\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -4,14 +4,13 @@ namespace Kentro
 {
     public class Pawn
     {
-        public int x { get; set; }
-        public int y { get; set; }
+        public Position position;
         public int Move { get; set; }
 
         public Pawn(int x,int y)
         {
-            this.x = x;
-            this.y = y;
+            position.x = x;
+            position.y = y;
             Move = 1;
         }
 

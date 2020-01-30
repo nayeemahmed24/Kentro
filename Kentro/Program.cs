@@ -10,6 +10,8 @@ namespace Kentro
     {
         static void Main(string[] args)
         {
+            Grid grid = new Grid( 9 );
+            Console.WriteLine(grid.getCard(1,1).value);
 
         }
     }
