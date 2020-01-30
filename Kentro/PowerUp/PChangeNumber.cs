@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kentro
 {
-    class PChangeNumber:IPowerUp
+    public class PChangeNumber:IPowerUp
     {
         private int probability = 2;
         public int getProbability()
@@ -10,9 +11,11 @@ namespace Kentro
             return probability;
         }
 
-        public void Operation()
+        public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid, params object[] arguments)
         {
             throw new NotImplementedException();
         }
+
+       
     }
 }
