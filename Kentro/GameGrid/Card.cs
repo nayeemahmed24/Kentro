@@ -1,4 +1,4 @@
-﻿
+﻿  
 
 using System;
 
@@ -15,7 +15,7 @@ namespace Kentro
         public Card(PlayerEnum playerid)
         {
 
-            value = new Random().Next(1,7);//
+            value = new Random().Next(1,7);
             pawnOwner = playerid;  
             flipped = true;
             powerFactory = new PowerUpFactory();
