@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Kentro
 {
-    class PBlock:IPowerUp
+    public class PBlock:IPowerUp
     {
         private int probability = 5;
         public int getProbability()
