@@ -19,6 +19,7 @@ namespace Kentro
             pawnOwner = playerid;  
             flipped = true;
             powerFactory = new PowerUpFactory();
+
             switch (powerFactory.ListPowerUps.Count)
             {
                 case 0:
@@ -30,6 +31,25 @@ namespace Kentro
                     break;
             }
 
+        }
+
+        public Card(PlayerEnum player, int value)
+        {
+            this.value = value;
+            pawnOwner = player;
+            flipped = true;
+            powerFactory = new PowerUpFactory();
+
+            switch (powerFactory.ListPowerUps.Count)
+            {
+                case 0:
+                    powerup = new PNone();
+                    break;
+                default:
+                    powerup = powerFactory.ListPowerUps.Peek();
+                    powerFactory.ListPowerUps.Pop();
+                    break;
+            }
         }
     }
 }
