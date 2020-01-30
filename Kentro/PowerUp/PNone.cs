@@ -3,7 +3,9 @@ using System.Collections.Generic;
 
 namespace Kentro
 {
-    public class PNone:IPowerUp
+
+   public class PNone:IPowerUp
+
     {
         private int probability = 1;
         public int getProbability()
@@ -15,5 +17,7 @@ namespace Kentro
         {
             throw new NotImplementedException();
         }
+
+        
     }
 }
