@@ -9,8 +9,7 @@ namespace Kentro
 
         public Pawn(int x,int y)
         {
-            position.x = x;
-            position.y = y;
+            position = new Position(x,y);
             Move = 1;
         }
 

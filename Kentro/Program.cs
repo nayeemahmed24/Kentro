@@ -12,6 +12,7 @@ namespace Kentro
         {
             Grid grid = new Grid( 9 );
             Console.WriteLine(grid.getCard(1,1, PlayerEnum.Player1).value);
+
         }
 
         

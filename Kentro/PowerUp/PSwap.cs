@@ -2,7 +2,10 @@
 
 namespace Kentro
 {
-    internal class PSwap : IPowerUp
+
+    public class PSwap:IPowerUp
+
+
     {
         private int probability = 6;
         public int getProbability()
