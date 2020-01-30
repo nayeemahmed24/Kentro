@@ -20,10 +20,7 @@ namespace Kentro
             {
                 grid.Add(player1.pawn[i].position, new Card(player1.PlayerId,player1.pawn[i].Move));
             }
-            //for (int i = 0; i < 3; i++)
-            //{
-            //    grid.Add(player1.pawn[i].position, new Card(player1.PlayerId, player1.pawn[i].Move));
-            //}
+            
 
             for (int i = 0; i < 3; i++)
             {
