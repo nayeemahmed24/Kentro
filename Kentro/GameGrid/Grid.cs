@@ -19,14 +19,14 @@ namespace Kentro
             grid = new Dictionary<Position, Card>();
             goal.x = (gridSize - 1) / 2;
             goal.y = (gridSize - 1) / 2;
-            player1 = new Player(0, 0);
-            player2 = new Player(gridSize - 1, gridSize - 1);
+            player1 = new Player(0, 0,PlayerEnum.Player1);
+            player2 = new Player(gridSize - 1, gridSize - 1,PlayerEnum.Player2);
         }
 
 
         #endregion
 
-        public Card getCard(int x, int y)
+        public Card getCard(int x, int y, PlayerEnum playerid)
         {
             Position pos = new Position(x,y);
             if (grid.ContainsKey(pos))
@@ -35,7 +35,7 @@ namespace Kentro
             }
             else
             {
-                Card card = new Card();
+                Card card = new Card(playerid);
                 grid.Add(pos,card);
                 return card;
             }

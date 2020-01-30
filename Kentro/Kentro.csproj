@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="GameGrid\Card.cs" />
     <Compile Include="GameGrid\Grid.cs" />
+    <Compile Include="GameGrid\PlayerEnum.cs" />
     <Compile Include="GameGrid\Position.cs" />
     <Compile Include="Players\Pawn.cs" />
     <Compile Include="Players\Player.cs" />
