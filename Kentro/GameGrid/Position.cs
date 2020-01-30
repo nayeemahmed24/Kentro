@@ -1,5 +1,7 @@
 ﻿
 
+using System;
+
 namespace Kentro
 {
     public class Position
@@ -10,6 +12,20 @@ namespace Kentro
         {
             this.x = x;
             this.y = y;
+        }
+
+        public bool equals(int v,int w)
+        {
+            if (v == x && w == y) return true;
+            else
+            {
+                return false;
+            }
+        }
+
+        public static explicit operator Position(int v)
+        {
+            throw new NotImplementedException();
         }
     }
 }
