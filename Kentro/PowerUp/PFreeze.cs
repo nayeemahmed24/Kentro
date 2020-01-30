@@ -1,8 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Kentro
 {
-    class PFreeze:IPowerUp
+    public class PFreeze:IPowerUp
     {
         private int probability = 3;
         public int getProbability()
@@ -10,7 +11,7 @@ namespace Kentro
             return probability;
         }
 
-        public void Operation()
+        public void Operation(Player player1, Player player2, Dictionary<Position, Card> grid, params object[] arguments)
         {
             throw new NotImplementedException();
         }

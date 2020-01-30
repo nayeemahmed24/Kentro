@@ -55,7 +55,7 @@
     <Compile Include="PowerUp\PNone.cs" />
     <Compile Include="PowerUp\PowerUpFactory.cs" />
     <Compile Include="PowerUp\PShow.cs" />
-    <Compile Include="PowerUp\PShuffle.cs" />
+    <Compile Include="PowerUp\PSwap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PowerUp\PShuffleAll.cs" />

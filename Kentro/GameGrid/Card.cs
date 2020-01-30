@@ -4,7 +4,7 @@ using System;
 
 namespace Kentro
 {
-    class Card
+    public class Card
     {
         public int value;
         public bool flipped;
@@ -16,7 +16,7 @@ namespace Kentro
 
         public Card()
         {
-            value = new Random().Next(0,7);//
+            value = new Random().Next(1,7);//
             flipped = true;
             powerFactory = new PowerUpFactory();
             switch (powerFactory.ListPowerUps.Count)
